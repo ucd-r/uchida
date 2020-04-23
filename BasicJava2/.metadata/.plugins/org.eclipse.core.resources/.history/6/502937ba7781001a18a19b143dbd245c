@@ -1,0 +1,17 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class FraudDice extends Dice {
+	private int setDiceNum;
+	
+	@Override
+	public int cast() { 
+		setDiceNum = super.cast();
+		
+		while((setDiceNum == 1) ||(setDiceNum == 2)){
+			setDiceNum = super.cast();
+		}
+		
+		return setDiceNum;
+	}
+	
+}

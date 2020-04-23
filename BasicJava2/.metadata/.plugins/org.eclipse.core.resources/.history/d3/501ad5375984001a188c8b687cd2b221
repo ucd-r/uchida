@@ -1,0 +1,103 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+
+public class Judge {
+
+	private ArrayList<Player> players_list = new ArrayList<Player>();
+	private ArrayList<Player>jankenWinner_list  = new ArrayList<Player>();
+
+	public void addPlayers(Player ... players) {
+		for(Player player :players) {
+			this.players_list.add(player);
+		}
+	}
+
+	public void playGame(int GAME_COUNT) {
+		GameRecorder.printPlayGame(players_list);
+
+		for(int i = 1; i <= GAME_COUNT; i++) {
+			System.out.printf("\n\n【%d回戦目】\n",i );
+			for(Player player :players_list) {
+				player.setHand();
+			}
+			GameRecorder.recordPlayersHand(players_list);
+
+			addJankenWinner();
+
+			//勝者に加点
+			for(Player winner :jankenWinner_list) {
+				winner.addPoint();
+			}
+			GameRecorder.printResults(jankenWinner_list, players_list.size());
+			jankenWinner_list.clear();
+		}
+	}
+
+	//勝ち数の比較とゲームの勝敗出力
+	public void endGame() {
+
+		//得点のリストを作成
+		ArrayList<Integer> score_list  = new ArrayList<Integer>();
+		for(Player player : players_list) {
+			score_list.add(player.getScore());
+		}
+		//最高得点者のリストを作成
+		ArrayList<Player> finalWinner_list  = new ArrayList<Player>();
+		for(Player player :players_list) {
+			if(Collections.max(score_list) == player.getScore()) {
+				finalWinner_list.add(player);
+			}
+		}
+		GameRecorder.printResults(finalWinner_list, players_list.size());
+	}
+
+
+	//全員の手を確認し，勝つ手を調べる
+	private String winHand() {
+		int results = 0;
+		//グー：001,  チョキ：010，パー:100
+		HashMap<String, Integer> hand_map = new HashMap<String, Integer>();
+		hand_map.put(Hand.GU, 1);
+		hand_map.put(Hand.CHOKI, 2);
+		hand_map.put(Hand.PA, 4);
+
+		//全手の論理和
+		for(Player player :players_list) {
+			results  |= hand_map.get(player.getLastHand());
+		}
+
+		//勝つ手を返す
+		switch(results) {
+		case 1:
+			return null;
+		case 2:
+			return null;
+		case 3:
+			return Hand.GU;
+		case 4:
+			return null;
+		case 5:
+			return Hand.PA;
+		case 6:
+			return Hand.CHOKI;
+		}
+		return null;
+	}
+
+	//JankenWinner_listに勝者格納
+	private void addJankenWinner() {
+
+		if(winHand() == null){
+			jankenWinner_list = (ArrayList<Player>) players_list.clone();
+		}
+		for(Player player :players_list) {
+			if(player.getLastHand().equals(winHand())) {
+				jankenWinner_list.add(player);
+			}
+		}
+	}
+
+}

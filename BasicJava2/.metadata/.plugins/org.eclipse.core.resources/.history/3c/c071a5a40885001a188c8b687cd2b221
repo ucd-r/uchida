@@ -1,0 +1,22 @@
+package work12.work12_01;
+
+public class work12_1 {
+
+	public static void main(String[] args) {
+		//Color black = Color.BLACK;
+		Color red = Color.RED;
+		Color green = Color.GREEN;
+		Color yellow = Color.YELLOW;
+		Color blue = Color.BLUE;
+		Color purple = Color.PURPLE;
+		Color cyan = Color.CYAN;
+		Color white = Color.WHITE;
+		
+		Color colorArray[] = {Color.BLACK, red, green};
+		for(Color color :colorArray) {
+			System.out.printf("色名：%s，カラーコード：#%x\n", color.japaneseName(), color.colorCode());
+		}
+
+	}
+
+}

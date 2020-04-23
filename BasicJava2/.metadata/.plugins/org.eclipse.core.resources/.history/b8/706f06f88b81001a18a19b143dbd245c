@@ -1,0 +1,14 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+import java.util.Random;
+
+public class SequentialDice implements Dice{
+	private int setDiceNum;
+
+    public int cast() {
+    	for(int i = 1; i <= 6; i++) {
+    		setDiceNum = i;
+    	}
+		return setDiceNum;
+    }
+}

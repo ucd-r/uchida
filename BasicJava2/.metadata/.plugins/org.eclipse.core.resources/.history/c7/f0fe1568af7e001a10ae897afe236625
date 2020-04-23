@@ -1,0 +1,8 @@
+package work09.work0904;
+
+public class Shape {
+
+	public double getArea() {
+		return 0;
+	}
+}

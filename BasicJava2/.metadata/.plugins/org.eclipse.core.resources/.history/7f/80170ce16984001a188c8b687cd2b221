@@ -1,0 +1,38 @@
+package work11.work1101;
+
+import java.util.Scanner;
+
+public class SimpleCalc {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		String value;
+		Integer sum =Integer.valueOf(0) ;
+		StringBuilder sb = new StringBuilder();
+		while(true) {
+			System.out.printf("%d:", sum);
+			String line = scanner.nextLine();
+			try {
+				value = line.intern();
+				if(value.equals("=") ) {
+					break;
+				}
+				sum += Integer.parseInt(value);
+				sb.append("World from JAPAN!");
+
+			}catch(NumberFormatException e){
+				System.out.printf("整数を入力してください");
+				continue;
+				// 変換できない場合は、この部分が実行される
+			}
+
+		}
+
+
+
+
+
+	}
+
+}

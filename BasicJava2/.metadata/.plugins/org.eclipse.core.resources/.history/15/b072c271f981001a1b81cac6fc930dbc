@@ -1,0 +1,21 @@
+package Work2_5;
+
+import java.util.Scanner;
+
+public class Work2_5 {
+	 public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("文字列入力：");
+		String  stringIn = stdIn.next();
+		System.out.println(stringIn);
+		
+		System.out.print("true／false入力：");	
+		boolean boolIn = stdIn.hasNext();
+		System.out.println(boolIn);
+		
+		System.out.print("少数入力：");	
+		double boubleIn = stdIn.nextFloat();
+		System.out.println(boubleIn);
+	 }
+
+}

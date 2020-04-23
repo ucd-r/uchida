@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0" value="112"/>
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1" value="557"/>
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2" value="82"/>
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn" value="1"/>
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BasicJava2/src&amp;lt;work08.work0801{RectangleTest.java[RectangleTest&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BasicJava2/src&amp;lt;work08.work0811{PrintAbsoluteValue.java[PrintAbsoluteValue&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BasicJava2/src&amp;lt;work08.work0812{CircleTest.java[CircleTest&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BasicJava2/src&amp;lt;work08.work0815{RectangularTest.java[RectangularTest&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BasicJava2/src&amp;lt;work09.work0904{ShapeTest.java[ShapeTest&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=BasicJava2/src&amp;lt;jp.co.ulsystems.rie_uchida.dicegame{DiceGame.java[DiceGame&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="196"/>
+			<item key="DIALOG_Y_ORIGIN" value="18"/>
+			<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Yu Gothic UI"/>
+		</section>
+	</section>
+	<section name="expressionHistory">
+	</section>
+</section>

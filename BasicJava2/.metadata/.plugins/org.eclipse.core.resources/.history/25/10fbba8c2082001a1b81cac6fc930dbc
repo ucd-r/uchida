@@ -1,0 +1,16 @@
+package work4.work4_02;
+import java.util.Random;
+
+public class Work4_2 {
+
+	public static void main(String[] args) {
+        Random rnd = new Random();
+        int sum = 0;
+        while(sum <= 100) {
+            int num = rnd.nextInt(31) ;
+            System.out.println(sum += num);
+        }
+
+	}
+
+}

@@ -1,0 +1,41 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Judge {
+	private ArrayList<Player> players_list = new ArrayList<Player>();
+
+	public void addPlayers(Player ... players) {
+		for(Player player :players) {
+			this.players_list.add(player);
+		}
+	}
+
+	public void startGame(int GameNum) {
+		for(int i = 0; i < GameNum; i++) {
+			for(Player player : players_list) {
+				player.castDice();
+				GameRecorder.printGameScore(player);
+			}
+		}
+	}
+
+	public void endGame() {
+		//得点のリストを作成
+		ArrayList<Integer> score_list  = new ArrayList<Integer>();
+		for(Player player : players_list) {
+			score_list.add(player.getScore());
+		}
+
+		//最高得点者のリストを作成
+		ArrayList<String> winner_list  = new ArrayList<String>();
+		for(Player player :players_list) {
+			if(Collections.max(score_list) == player.getScore()) {
+				winner_list.add(player.getPlayerName());
+			}
+		}
+		GameRecorder.printWinners(winner_list);
+	}
+
+}

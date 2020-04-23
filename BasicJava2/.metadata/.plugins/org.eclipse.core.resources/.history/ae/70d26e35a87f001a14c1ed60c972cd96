@@ -1,0 +1,11 @@
+package work09.work0912;
+
+public class Person {
+	private String firstName, familyName;
+	
+	//@Override
+	//public boolean equals() {
+		
+	//}
+	
+}

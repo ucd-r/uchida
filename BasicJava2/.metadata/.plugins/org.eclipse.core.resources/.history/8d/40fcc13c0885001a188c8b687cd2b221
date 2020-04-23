@@ -1,0 +1,19 @@
+package work12.work12_01;
+
+public enum Color {
+	BLACK("黒"), RED("赤"), GREEN("緑"), YELLOW("黄色"), BLUE("青"), PURPLE("紫"), CYAN("水"), WHITE("白");
+
+	private final String japaneseName;
+
+	Color(String japaneseName) {
+		this.japaneseName = japaneseName;
+	}
+
+	public String japaneseName() {
+		return japaneseName;
+		  }
+
+//	public int colorCode(String value) {
+//
+//	}
+}

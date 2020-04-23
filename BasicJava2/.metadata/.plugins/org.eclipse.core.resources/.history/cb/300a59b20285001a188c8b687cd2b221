@@ -1,0 +1,19 @@
+package work12.work12_01;
+
+public enum Color {
+	BLACK,RED;
+	private final String displayName;
+	Color(String displayName) {
+	    this.displayName = displayName;
+	  }
+	  public static Color getValue (String value) {
+		    switch (value) {
+		      case "男性":  return MALE;
+		      case "女性":  return FEMALE;
+		      default:      return UNKNOWN;
+		    }
+		  }
+
+
+
+}

@@ -1,0 +1,5 @@
+package testJava;
+
+public interface ABC {
+	void test();
+}

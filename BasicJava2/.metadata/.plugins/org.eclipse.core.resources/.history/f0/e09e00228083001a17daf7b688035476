@@ -1,0 +1,97 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Judge {
+
+	private ArrayList<Player> players_list = new ArrayList<Player>();
+	private ArrayList<Player>jankenWinner_list  = new ArrayList<Player>();
+
+	public void addPlayers(Player ... players) {
+		for(Player player :players) {
+			this.players_list.add(player);
+		}
+	}
+
+	public void startGame(int GAME_COUNT) {
+		GameRecorder.printPlayGame(players_list);
+
+		for(int i = 1; i <= GAME_COUNT; i++) {
+			System.out.printf("\n【%d回戦目】",i );
+			//手を出させる
+			for(Player player :players_list) {
+				player.setHand();
+			}
+			GameRecorder.printPlayersHand(players_list);
+			//勝者リスト作成
+			addJankenWinner();
+			for(Player winner :jankenWinner_list) {
+				winner.addPoint();
+				GameRecorder.printResults(winner);
+			}
+			jankenWinner_list.clear();
+			
+		}
+
+	}
+
+	//勝ち数の比較とゲームの勝敗出力
+//	public void endGame() {
+//		System.out.printf("%d対%dで",player1.getScore(),player2.getScore());
+//
+//		if(player1.getScore() > player2.getScore()) {
+//			System.out.println(player1.getName() + "さんの勝ちです！");
+//		}else if (player1.getScore() < player2.getScore()) {
+//			System.out.println(player2.getName() + "さんの勝ちです！");
+//		}else {
+//			System.out.println("引き分けです！");
+//		}
+//	}
+
+	//全員の手を確認し，勝つ手を調べる
+	public String winHand() {
+		int results = 0;
+		//グー：001,  チョキ：010，パー:100
+		HashMap<String, Integer> hand_map = new HashMap<String, Integer>();
+		hand_map.put(Hand.GU, 1);
+		hand_map.put(Hand.CHOKI, 2);
+		hand_map.put(Hand.PA, 4);
+
+		//全手の論理和
+		for(Player player :players_list) {
+			results  |= hand_map.get(player.getLastHand());
+		}
+
+		//勝つ手を返す
+		switch(results) {
+		case 1:
+			return null;
+		case 2:
+			return null;
+		case 3:
+			return Hand.GU;
+		case 4:
+			return null;
+		case 5:
+			return Hand.PA;
+		case 6:
+			return Hand.CHOKI;
+		}
+		return null;
+	}
+
+	//JankenWinner_listに勝者格納
+	public void addJankenWinner() {
+
+		if(winHand() == null){
+			jankenWinner_list = (ArrayList<Player>) players_list.clone();
+		}
+		for(Player player :players_list) {
+			if(player.getLastHand().equals(winHand())) {
+				jankenWinner_list.add(player);
+			}
+		}
+	}
+
+}

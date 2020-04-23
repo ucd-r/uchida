@@ -1,0 +1,10 @@
+package work07.work0701;
+
+public class SimpleCalc {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

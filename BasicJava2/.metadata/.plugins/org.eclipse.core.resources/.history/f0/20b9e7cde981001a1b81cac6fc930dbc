@@ -1,0 +1,12 @@
+package work2_5;
+
+import java.util.Scanner;
+
+public class Work2_5 {
+	Scanner stdIn = new Scanner(System.in);
+	String  stringIn = stdIn.next();
+	System.out.println("xとyを加減乗除します。");
+	boolean boolIn = stdIn.hasNext();
+	double boubleIn = stdIn.nextDouble();
+	
+}

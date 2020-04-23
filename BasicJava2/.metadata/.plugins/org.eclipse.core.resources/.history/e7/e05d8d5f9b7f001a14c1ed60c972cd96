@@ -1,0 +1,25 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class DiceGame {
+	static final int GameNum = 5;
+
+	public static void main(String[] args) {
+
+		FraudDice dice1 = new FraudDice();
+		Dice dice2 = new Dice();
+
+		Player player1 = new Player("漆原", dice1);
+		Player player2 =  new Player("平澤", dice2);
+
+		Judge judge = new Judge();
+
+		judge.addPlayers(player1, player2);
+
+		judge.startGame(GameNum);
+
+		judge.endGame();
+
+
+	}
+
+}

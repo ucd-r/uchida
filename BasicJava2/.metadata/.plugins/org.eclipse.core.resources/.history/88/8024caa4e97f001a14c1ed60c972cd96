@@ -1,0 +1,54 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+import java.util.Random;
+
+public class Hand {
+
+	static final int pa = 0;
+	static final int gu = 1;
+	static final int choki = 2;
+
+	static final String[] guchokipa = {
+		"pa","gu","pa"
+	};
+
+	private Random rand;
+
+	private String HAND;
+
+	//出す手を決める
+	/*
+	public String chooseHand() {
+
+    	rand = new Random();
+    	int num = rand.nextInt(3);
+
+    	if(num == 0) {
+    		HAND = "グー";
+    	}
+    	else if(num == 1) {
+    		HAND = "チョキ";
+    	}
+    	else {
+    		HAND = "パー";
+    	}
+    	return HAND;
+	}
+	*/
+	public int chooseHand() {
+
+    	rand = new Random();
+    	int num = rand.nextInt(3);
+
+    	if(num == 0) {
+    		return this.gu;
+    	}
+    	else if(num == 1) {
+    		return this.choki;
+    	}
+    	else {
+    		return this.pa;
+    	}
+	}
+
+}

@@ -1,0 +1,17 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+import java.util.Random;
+
+public interface Dice {
+
+	//private Random rand;
+
+    public int cast();
+
+	/*    {
+		rand = new Random();
+		int num = rand.nextInt(6) +1;
+		return num;
+	}*/
+
+}

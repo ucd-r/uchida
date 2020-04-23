@@ -1,0 +1,19 @@
+package testJava;
+
+public class B {
+
+	int b =2;
+
+	  B(){super();
+	       //this.b = b;
+		    System.out.println("クラスBのコンストラクタ");
+		  }
+	  //@Override
+	  public void test(){
+		  System.out.println(this.b);
+	  }
+
+	  public  int getB() {
+		  return  this.b;
+	  }
+}

@@ -1,0 +1,30 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class DiceBattle {
+	static final int GameNum = 5;
+
+	public static void main(String[] args) {
+
+
+		SequentialDice diceS = new SequentialDice();
+		RandomDice diceR = new RandomDice();
+		FraudDice diceF = new FraudDice(diceR);
+
+
+		Player player1 = new Player("龍頭", dice
+				F);
+		Player player2 =  new Player("平澤", diceR);
+		Player player3 =  new Player("平澤", diceS);
+
+		Judge judge = new Judge();
+
+		judge.addPlayers(player1, player2, player3);
+
+		judge.startGame(GameNum);
+
+		judge.endGame();
+
+
+	}
+
+}

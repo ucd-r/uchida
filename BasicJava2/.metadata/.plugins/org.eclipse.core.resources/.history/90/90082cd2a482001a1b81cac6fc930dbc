@@ -1,0 +1,15 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class RandomDiceTest {
+
+	public static void main(String[] args) {
+		RandomDice test = new RandomDice();
+
+		for(int i=0; i<1000; i++ ) {
+			if((test.cast() < 1) || (test.cast() > 6)) {
+				System.out.println("error:" + test.cast());
+			}
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class HandType1 extends HandType3 {
+	private static final String CHOKI = "チョキ";
+
+	@Override
+	public String chooseHand() {
+		return CHOKI;
+	}
+
+}

@@ -1,0 +1,26 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+import java.util.ArrayList;
+
+public class GameRecorder {
+
+	public static void printPlayGame(ArrayList<Player> players_list) {
+		System.out.println("【ジャンケン開始】" );
+		for(Player player : players_list) {
+			System.out.printf( "%sさんvs.", player.getName());
+		}
+	}
+
+	public static void printPlayersHand(ArrayList<Player> players_list) {
+		for(Player player : players_list) {
+			System.out.printf( "%svs.", player.setHand());
+		}
+	}
+
+	public static void printResults(Player winner) {
+		System.out.println(winner.getName() + "さんが勝ちました！\n");
+	}
+
+
+
+}

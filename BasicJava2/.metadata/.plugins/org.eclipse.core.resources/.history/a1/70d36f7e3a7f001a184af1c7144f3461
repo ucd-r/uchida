@@ -1,0 +1,73 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class Judge {
+
+	private Player player1;
+	private Player player2;
+
+	public void addPlayers(Player player1, Player player2) {
+		this.player1  = player1;
+		this.player2  = player2;
+	}
+
+	public void startGame() {
+		System.out.println(player1.setHand() + "vs." + player2.setHand());
+		judgeJanken();
+		System.out.println();
+	}
+
+	public void endGame() {
+		System.out.print(player1.getScore() + "対" + player2.getScore() + "で");
+
+		if(player1.getScore() > player2.getScore()) {
+			System.out.println(player2.getName() + "さんの勝ちです！");
+		}else if (player1.getScore() < player2.getScore()) {
+			System.out.println(player2.getName() + "さんの勝ちです！");
+		}else {
+			System.out.println("引き分けです！");
+		}
+	}
+
+
+
+	public void judgeJanken() {
+
+		if(player1.getHand().equals(player2
+				.getHand())) {
+			player1.addPoint();
+			player2.addPoint();
+			System.out.println("引き分けです！");
+		}
+		switch (player1.getHand()) {
+		case "グー":
+			if(player2.getHand().equals("チョキ")) {
+				player1.addPoint();
+				System.out.println(player1.getName() + "さんが勝ちました！");
+			}else if (player2.getHand().equals("パー")) {
+				player2.addPoint();
+				System.out.println(player2.getName() + "さんが勝ちました！");
+			}
+			break;
+		case "チョキ":
+			if(player2.getHand().equals("パー")) {
+				player1.addPoint();
+				System.out.println(player1.getName() + "さんが勝ちました！");
+			}else if (player2.getHand().equals("グー")) {
+				player2.addPoint();
+				System.out.println(player2.getName() + "さんが勝ちました！");
+			}
+			break;
+		case "パー":
+			if(player2.getHand().equals("グー")) {
+				player1.addPoint();
+				System.out.println(player1.getName() + "さんが勝ちました！");
+			}else if (player2.getHand().equals("チョキ")) {
+				player2.addPoint();
+				System.out.println(player2.getName() + "さんが勝ちました！");
+			}
+			break;
+
+		}
+
+	}
+}

@@ -1,0 +1,39 @@
+package work11.work1101;
+
+import java.util.Scanner;
+
+public class SimpleCalc {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		StringBuilder recordVal  = new StringBuilder();
+		String value;
+		Integer num = 0;
+
+		while (true) {
+			System.out.printf("%d：", num);
+			String line = scanner.nextLine();
+			try {
+				value = line.intern();
+				if (value.equals("=")) {
+					recordVal.append(value + num);
+					break;
+				}
+				num += Integer.parseInt(value);
+				System.out.println(recordVal.length());
+				if((Integer.parseInt(value) > 0) && (recordVal.length()!=0) ) {
+					recordVal.append("+");
+				}
+					recordVal.append(value);
+
+
+
+			} catch (NumberFormatException e) {
+				System.out.println("整数を入力してください");
+				continue;
+			}
+		}
+		System.out.println(recordVal);
+	}
+
+}

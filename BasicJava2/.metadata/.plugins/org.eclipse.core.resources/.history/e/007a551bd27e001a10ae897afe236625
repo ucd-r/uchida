@@ -1,0 +1,18 @@
+package jp.co.ulsystems.rie.uchida.dicegame;
+
+public class PlayerTest {
+
+	public static void main(String[] args) {
+		Dice dice1 = new Dice();
+		Player p1 =  new Player("rie", dice1);
+		
+		System.out.println(p1.getScore());
+		for(int i = 0; i < 10; i++) {
+			p1.castDice();
+			System.out.println(p1.getScore());
+			
+		}
+
+	}
+
+}

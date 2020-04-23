@@ -1,0 +1,25 @@
+package work09.work0902;
+
+public class Rectangular {
+
+	int width;
+	int height;
+	int depth;
+	
+	public Rectangular(int width, int height, int depth){
+
+	}
+	
+	public int getVolume() {
+		int vol = width*height*depth;
+		return vol;
+	}
+	
+	public boolean isCube() {
+		if((width == height) && (depth == height))
+			return true;
+		else return false;
+		
+	}
+	
+}

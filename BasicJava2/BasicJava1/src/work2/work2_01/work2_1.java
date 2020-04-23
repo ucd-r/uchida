@@ -1,0 +1,15 @@
+package work2.work2_01;
+
+public class work2_1 {
+	public static void main(String[] args) {
+	    int x;		// x は int 型の変数
+	    int y;		// y は int 型の変数
+	    x = 63;	// x に 63 を代入
+	    y = 18;	// y に 18 を代入
+	    System.out.println("xの値は" + x + "です。");		// x の値を表示
+	    System.out.println("yの値は" + y + "です。");		// y の値を表示
+	    System.out.println("合計は" + (x + y) + "です。");	// 合計を表示
+	    System.out.println("平均は" + (x + y) / 2 + "です。");	// 平均を表示
+	  }
+
+}

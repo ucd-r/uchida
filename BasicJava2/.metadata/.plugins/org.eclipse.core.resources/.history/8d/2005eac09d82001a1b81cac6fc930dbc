@@ -1,0 +1,14 @@
+package work5.work5_01;
+
+public class work5_1 {
+
+	public static void main(String[] args) {
+        int[] intArray = {8, 4, 10, 2, 7, 5, 1, 3, 9, 6};
+        System.out.println(intArray[0]);
+        System.out.println(intArray[5]);
+        System.out.println(intArray[9]);
+       System.out.println(intArray[10]);
+
+	}
+
+}

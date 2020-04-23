@@ -1,0 +1,15 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class HandTest {
+
+	public static void main(String[] args){
+		Hand test = new Hand();
+		
+		for(int i=0; i<100; i++ ) {
+			if (test.chooseHand().equals("グー") || test.chooseHand().equals("チョキ") || test.chooseHand().equals("パー")) {
+			}else {
+				System.out.println("error：" + test.chooseHand());
+			}
+		}
+	}
+}

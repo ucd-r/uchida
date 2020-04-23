@@ -1,0 +1,25 @@
+package work10.work1002;
+
+public class ShapeTest {
+	  public static void main(String[] args) {
+		    testShape(new Rectangle(3,4));		// 長方形
+		    testShape(new Circle(16));		// 円
+		    testShape(new Trapezoid(7 , 8, 9));	// 台形
+		    testShape(new Square(10));		// 正方形
+	}
+
+	  private static void testShape(Shape shape) {
+		  int ratio = 2;
+		  System.out.println("getArea:" + shape.getArea());
+		  System.out.println("getPerimeter:" +shape.getPerimeter());
+		  shape.expand(ratio);
+		  System.out.println("expandArea:" + shape.getArea());
+
+		  if(shape instanceof Spreadable) {
+			  shape.spread(ratio);
+			  System.out.println("spreadArea:" + shape.getArea());
+		  }
+		  System.out.println();
+	 }
+
+}

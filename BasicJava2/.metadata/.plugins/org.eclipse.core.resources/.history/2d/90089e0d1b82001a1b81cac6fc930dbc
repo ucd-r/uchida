@@ -1,0 +1,17 @@
+package work3_07;
+import java.util.Scanner;
+
+public class Work3_7 {
+
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+        System.out.println("整数：");
+        int a = stdIn.nextInt() ;
+        int b = stdIn.nextInt() ;
+        if (Math.abs(a-b) <= 10)
+            System.out.println("それらの差は10以下です。");
+        else System.out.println("それらの差は11以上です。");
+
+	}
+
+}

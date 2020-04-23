@@ -1,0 +1,10 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class HandType1 implements Hand {
+
+	@Override
+	public String chooseHand() {
+		return Hand.CHOKI;
+	}
+
+}

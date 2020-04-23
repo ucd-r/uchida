@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.Bool"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="work08.work0801.Rectangle"/>
+    <fullyQualifiedTypeName name="work08.work0803.Rectangle"/>
+    <fullyQualifiedTypeName name="work08.work0805.Rectangular"/>
+    <fullyQualifiedTypeName name="jp.co.ulsystems.rie.uchida.dicegame.Player"/>
+    <fullyQualifiedTypeName name="jp.co.ulsystems.rie_uchida.janken.Player"/>
+    <fullyQualifiedTypeName name="work09.work0908.Shape"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="jp.co.ulsystems.rie_uchida.dicegame.RandomDice"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="jp.co.ulsystems.rie_uchida.dicegame.GameRecorder"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="jp.co.ulsystems.rie_uchida.janken.GameRecorder"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="jp.co.ulsystems.rie_uchida.janken.Hand"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+</qualifiedTypeNameHistroy>

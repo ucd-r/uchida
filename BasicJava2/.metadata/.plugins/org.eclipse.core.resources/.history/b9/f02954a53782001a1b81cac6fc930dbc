@@ -1,0 +1,24 @@
+package work4.work4_04;
+import java.util.Scanner;
+
+public class Work4_4 {
+
+	public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+
+        int width;
+        int height;
+        do {
+            System.out.println("縦入力:");
+            width = stdIn.nextInt();
+        }while(width == 0);
+        do {
+            System.out.println("横入力:");
+            height = stdIn.nextInt();
+        }while(height == 0);
+        System.out.println("面積=" + width*height);
+
+
+	}
+
+}

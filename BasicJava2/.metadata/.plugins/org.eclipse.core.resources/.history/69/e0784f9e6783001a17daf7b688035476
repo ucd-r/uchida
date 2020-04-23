@@ -1,0 +1,16 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class HandType3Test {
+
+	public static void main(String[] args){
+		HandType3 test = new HandType3();
+
+		for(int i=0; i<100; i++ ) {
+			if(test.chooseHand().equals(HandType3.GU) || test.chooseHand().equals(HandType3.CHOKI) || test.chooseHand().equals(HandType3.PA)) {
+			}else {
+				System.out.println(" Error :" + test.chooseHand());
+			}
+		}
+
+	}
+}

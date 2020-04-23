@@ -1,0 +1,108 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+
+public class Judge {
+
+	private ArrayList<Player> playersList = new ArrayList<Player>();
+	private ArrayList<Player>jankenWinnersList  = new ArrayList<Player>();
+	public void addPlayers(Player ... players) {
+		for(Player player :players) {
+			this.playersList.add(player);
+		}
+	}
+
+	/**
+	 * playerにジャンケンをさせ，ジャンケンの勝者に加点する
+	 *
+	 * @param GAME_COUNT
+	 */
+	public void playGame(int GAME_COUNT) {
+		GameRecorder.printPlayGame(this.playersList);
+
+		for(int i = 1; i <= GAME_COUNT; i++) {
+			System.out.printf("\n\n【%d回戦目】\n",i );
+			for(Player player :this.playersList) {
+				player.setHand();
+			}
+			GameRecorder.recordPlayersHand(this.playersList);
+
+			addWinnerToList();
+
+			for(Player winner :jankenWinnersList) {
+				winner.addPoint();
+			}
+			GameRecorder.printResults(jankenWinnersList, this.playersList.size());
+			jankenWinnersList.clear();
+		}
+	}
+
+	/**
+	 * scoreListに得点を格納し，最高得点を求める
+	 * finalWinnersListに最高得点者を格納
+	 */
+	public void gameResults() {
+
+		ArrayList<Integer> scoreList  = new ArrayList<Integer>();
+		for(Player player : this.playersList) {
+			scoreList.add(player.getScore());
+		}
+
+		ArrayList<Player> finalWinnersList  = new ArrayList<Player>();
+		for(Player player :this.playersList) {
+			if(Collections.max(scoreList) == player.getScore()) {
+				finalWinnersList.add(player);
+			}
+		}
+		GameRecorder.printResults(finalWinnersList, this.playersList.size());
+	}
+
+	/**
+	 * グー：001,  チョキ：010，パー:100
+	 * 全プレイヤーの手を把握し，勝ち手を求める
+	 * @return
+	 */
+	private String winHand() {
+		HashMap<String, Integer> hand_map = new HashMap<String, Integer>();
+		hand_map.put(Hand.GU, 1);
+		hand_map.put(Hand.CHOKI, 2);
+		hand_map.put(Hand.PA, 4);
+
+		int results = 0;
+		for(Player player :this.playersList) {
+			results  |= hand_map.get(player.getLastHand());
+		}
+
+		switch(results) {
+		case 1:
+			return null;
+		case 2:
+			return null;
+		case 3:
+			return Hand.GU;
+		case 4:
+			return null;
+		case 5:
+			return Hand.PA;
+		case 6:
+			return Hand.CHOKI;
+		}
+		return null;
+	}
+
+
+	private void addWinnerToList() {
+
+		if(winHand() == null){
+			jankenWinnersList = (ArrayList<Player>) this.playersList.clone();
+		}
+		for(Player player :playersList) {
+			if(player.getLastHand().equals(winHand())) {
+				jankenWinnersList.add(player);
+			}
+		}
+	}
+
+}

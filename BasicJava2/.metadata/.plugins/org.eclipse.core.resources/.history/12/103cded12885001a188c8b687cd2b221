@@ -1,0 +1,11 @@
+package testJava;
+
+public class B implements ABC{
+	  B(){
+		    System.out.println("クラスBのコンストラクタ");
+		  }
+	  @Override
+	  public void test(){
+		  System.out.println("クラスBのTest");
+	  }
+}

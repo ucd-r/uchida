@@ -1,0 +1,13 @@
+package testJava;
+
+public class A {
+	int a =1;
+	  A(int num){
+		    System.out.println("クラスAのコンストラクタ");
+		    this.a = num;
+		  }
+
+	  public void test(){
+		  System.out.println("クラスAのTest");
+	  }
+}

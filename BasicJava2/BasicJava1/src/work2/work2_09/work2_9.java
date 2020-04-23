@@ -1,0 +1,21 @@
+package work2.work2_09;
+
+import java.util.Scanner;
+
+public class work2_9 {
+
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+
+        System.out.println("x:");
+        int x = stdIn.nextInt();
+        System.out.println("y:");
+        int y = stdIn.nextInt();
+        System.out.println("z:");
+        int z = stdIn.nextInt();
+
+        System.out.println("合計：" + (x + y + z));
+        System.out.println("平均:" + (double)(x + y + z)/3);
+	}
+
+}

@@ -1,0 +1,27 @@
+package work5.work5_02;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Work5_2 {
+
+	public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+        System.out.println("h:");
+        int h = stdIn.nextInt();
+        int[] array = new int[h];
+        int sum =0;
+
+        for(int i= 0; i < h; i++) {
+            System.out.println("得点:");
+            array[i] = stdIn.nextInt();
+            sum += array[i] ;
+            }
+
+        Arrays.sort(array);
+        System.out.println("最小値は" + array[0] + "です。");
+        System.out.println("最大値は" + array[h-1] + "です。");
+        System.out.println(sum/h);
+
+	}
+
+}

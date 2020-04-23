@@ -1,0 +1,6 @@
+package jp.co.ulsystems.rie.uchida.dicegame;
+
+public class Judge {
+	//private Player p1 = new Player();
+	
+}

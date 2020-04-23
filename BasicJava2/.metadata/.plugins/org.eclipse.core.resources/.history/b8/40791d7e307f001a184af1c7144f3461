@@ -1,0 +1,26 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class JankenGame {
+
+	static final int GameNum = 10;
+
+	public static void main(String[] args) {
+		Hand hand1 = new Hand();
+		Hand hand2 = new Hand();
+
+		Player player1 = new Player("漆原", hand1);
+		Player player2 = new Player("平澤", hand2);
+
+		Judge judge = new Judge();
+
+
+		judge.addPlayers(player1, player2);
+
+		for(int i = 0; i < GameNum; i++) {
+			judge.startGame();
+		}
+
+		judge.endGame();
+	}
+
+}

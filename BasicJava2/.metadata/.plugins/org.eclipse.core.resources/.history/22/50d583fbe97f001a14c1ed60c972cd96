@@ -1,0 +1,52 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class Player {
+	private String name;
+	private Hand hand;
+	private int score;
+	//private String lastHand;
+	private int lastHand;
+
+
+	public Player(String name, Hand hand) {
+		this.name = name;
+		this.hand = hand;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getScore() {
+		return score;
+	}
+
+	/*
+	public String getLastHand() {
+		return lastHand;
+	}
+	*/
+	public int getLastHand() {
+		return lastHand;
+	}
+
+	//手を出す
+	/*
+	public String setHand() {
+		lastHand = hand.chooseHand();
+		return lastHand;
+	}
+	*/
+	public int setHand() {
+		lastHand = hand.chooseHand();
+		return lastHand;
+	}
+
+	//点追加
+	public void addPoint() {
+		score += 1;
+	}
+
+
+
+}

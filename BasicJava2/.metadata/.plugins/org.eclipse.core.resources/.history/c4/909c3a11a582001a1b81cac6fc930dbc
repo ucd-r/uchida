@@ -1,0 +1,17 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class SequentialDiceTest {
+
+	public static void main(String[] args) {
+		SequentialDice test3 = new SequentialDice();
+
+		for(int i=0; i<1000; i++ ) {
+			System.out.println(test3.cast());
+			if((test3.cast() < 1) || (test3.cast() > 6)) {
+				System.out.println("error:" + test3.cast());
+			}
+		}
+
+	}
+
+}

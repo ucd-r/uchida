@@ -1,0 +1,16 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class SequentialDice implements Dice{
+	private int set = 1;
+
+    public int cast() {
+    	if(set != 6) {
+    		set++;
+    		return set;
+    	}else {
+    		return 1;
+    	}
+    	
+    }
+
+}

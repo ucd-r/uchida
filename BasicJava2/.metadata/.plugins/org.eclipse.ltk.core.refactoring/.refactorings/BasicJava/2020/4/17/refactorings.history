@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 6 packages to &apos;BasicJava1/src&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;BasicJava&apos;&#x0D;&#x0A;- 宛先要素: &apos;BasicJava1/src&apos;&#x0D;&#x0A;- オリジナル要素:&#x0D;&#x0A;     BasicJava/src/work2_1&#x0D;&#x0A;     BasicJava/src/work2_2&#x0D;&#x0A;     BasicJava/src/work2_3&#x0D;&#x0A;     BasicJava/src/work2_4&#x0D;&#x0A;     BasicJava/src/work2_5&#x0D;&#x0A;     BasicJava/src/work1_1" description="パッケージのコピー" destination="=BasicJava1/src" element1="/src&lt;work2_1" element2="/src&lt;work2_2" element3="/src&lt;work2_3" element4="/src&lt;work2_4" element5="/src&lt;work2_5" element6="/src&lt;work1_1" flags="589830" fragments="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1587265158835" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class FraudDiceTest {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

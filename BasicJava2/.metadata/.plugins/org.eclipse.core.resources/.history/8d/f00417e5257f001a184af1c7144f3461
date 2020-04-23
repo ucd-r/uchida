@@ -1,0 +1,30 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+import java.util.Random;
+
+public class Hand {
+
+	private Random rand;
+
+
+	public String chooseHand() {
+
+		/*
+		 * 出す手を決める
+		 */
+
+    	rand = new Random();
+    	int num = rand.nextInt(3);
+
+    	if(num == 0) {
+    		return "グー";
+    	}
+    	else if(num == 1) {
+    		return "チョキ";
+    	}
+    	else {
+    		return "パー";
+    	}
+	}
+
+}

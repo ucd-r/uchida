@@ -1,0 +1,82 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class Judge {
+
+	private Player player1;
+	private Player player2;
+
+	public void addPlayers(Player player1, Player player2) {
+		this.player1  = player1;
+		this.player2  = player2;
+	}
+
+	public void startGame(int GAME_COUNT) {
+		
+		System.out.println("【ジャンケン開始】" );
+		System.out.printf( "%sさんvs.%sさん\n",player1.getName(),player2.getName());
+		
+		for(int i = 1; i <= GAME_COUNT; i++) {
+			System.out.println("【" + i + "回戦目】" );
+			System.out.println(player1.setHand() + "vs." + player2.setHand());
+
+			Player winner = judgeJanken();
+			if(winner != null) {
+				winner.addPoint();
+				System.out.println(winner.getName() + "さんが勝ちました！\n");
+			}
+			else {
+				player1.addPoint();
+				player2.addPoint();
+				System.out.println("引き分けです！\n");
+			}
+		}
+	}
+
+	//勝ち数の比較とゲームの勝敗出力
+	public void endGame() {
+		System.out.printf("%d対%dで",player1.getScore(),player2.getScore());
+
+		if(player1.getScore() > player2.getScore()) {
+			System.out.println(player1.getName() + "さんの勝ちです！");
+		}else if (player1.getScore() < player2.getScore()) {
+			System.out.println(player2.getName() + "さんの勝ちです！");
+		}else {
+			System.out.println("引き分けです！");
+		}
+	}
+
+	//ジャンケン勝敗の判定と結果出力
+	public Player judgeJanken() {
+
+		if(player1.getLastHand().equals(player2.getLastHand())) {
+			return null;
+		}
+
+		switch (player1.getLastHand()) {
+		case Hand.GU:
+			if(player2.getLastHand().equals(Hand.CHOKI)) {
+				return player1;
+			}else if (player2.getLastHand().equals(Hand.PA)) {
+				return player2;
+			}
+			break;
+		case Hand.CHOKI:
+			if(player2.getLastHand().equals(Hand.PA)) {
+				return player1;
+			}else if (player2.getLastHand().equals(Hand.GU)) {
+				return player2;
+			}
+			break;
+		case Hand.PA:
+			if(player2.getLastHand().equals(Hand.GU)) {
+				return player1;
+			}else if (player2.getLastHand().equals(Hand.CHOKI)) {
+				return player2;
+			}
+
+			break;
+		}
+		return null;
+	}
+
+}

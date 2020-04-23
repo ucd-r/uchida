@@ -1,0 +1,16 @@
+package work2_12;
+import java.util.Scanner;
+
+public class Work2_12 {
+    public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+
+        final double p = 3.14;
+        System.out.println("半径：");
+        double h = stdIn.nextDouble();
+
+        System.out.println("表面積＝" + 2*h*p);
+        System.out.println("面積＝" + h*h*p);
+
+    }
+}

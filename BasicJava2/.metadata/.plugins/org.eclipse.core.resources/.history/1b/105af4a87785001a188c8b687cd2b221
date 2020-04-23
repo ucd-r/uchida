@@ -1,0 +1,24 @@
+package work5.work5_06;
+
+public class Work5_6 {
+
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		int[] array = { 8, 4, 10, 2, 7, 5, 1, 3, 9, 6 };
+
+		System.out.println("検索（数字）：");
+		int w = stdIn.nextInt();
+		int t = 0;
+		for (int inta : array) {
+			if (inta == w) {
+				System.out.println("あり");
+				t = 1;
+			}
+		}
+		if (t == 0) {
+			System.out.println("なし");
+		}
+		stdIn.close();
+	}
+
+}

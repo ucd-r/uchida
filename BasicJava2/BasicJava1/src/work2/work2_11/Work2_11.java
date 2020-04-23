@@ -1,0 +1,10 @@
+package work2.work2_11;
+
+public class Work2_11 {
+
+	public static void main(String[] args) {
+		 System.out.println("\"商品A\"の価格は\\19,800です");
+
+	}
+
+}

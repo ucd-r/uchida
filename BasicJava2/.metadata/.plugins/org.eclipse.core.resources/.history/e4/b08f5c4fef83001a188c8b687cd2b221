@@ -1,0 +1,19 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class FraudDice implements Dice {
+	public Dice dice;
+
+	public FraudDice(Dice anotherDice) {
+		this.dice = anotherDice;
+	}
+
+	@Override
+	public int cast() {
+	    int diceNum = 0;
+		while(diceNum <= 2){
+			diceNum = dice.cast() ;
+		}
+		return diceNum;
+	}
+
+}

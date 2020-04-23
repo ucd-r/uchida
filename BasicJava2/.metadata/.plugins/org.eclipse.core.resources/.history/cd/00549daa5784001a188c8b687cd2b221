@@ -1,0 +1,35 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class HandTest {
+
+	public static void main(String[] args){
+		ScissorsHand test1 = new ScissorsHand();
+		HandType2 test2 = new HandType2();
+		Rock_Scissors_PaperHand test3 = new Rock_Scissors_PaperHand();
+
+		for(int i=0; i<100; i++ ) {
+			
+			//チョキ
+			String tsetHand = test1.chooseHand();
+			if(tsetHand.equals(Hand.CHOKI)) {
+			}else {
+				System.out.println(" Error :" + tsetHand);
+			}
+			
+			//グー、パー
+			tsetHand = test2.chooseHand();
+			if(tsetHand.equals(Hand.GU) || tsetHand.equals(Hand.PA)) {
+			}else {
+				System.out.println(" Error :" + tsetHand);
+			}
+			
+			//グー、チョキ，パー
+			tsetHand = test3.chooseHand();
+			if(tsetHand.equals(Hand.GU) || tsetHand.equals(Hand.CHOKI) || tsetHand.equals(Hand.PA)) {
+			}else {
+				System.out.println(" Error :" + test3.chooseHand());
+			}
+		}
+
+	}
+}

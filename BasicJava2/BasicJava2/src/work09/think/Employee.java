@@ -1,0 +1,22 @@
+package work09.think;
+
+public class Employee extends Person {
+	  protected String name = "sub";
+	  protected double salary;
+
+	  public String name1() {
+	    return super.name;
+	  }
+	  public String name2() {
+	    return name;
+	  }
+
+	    public static void main(String[] args) {
+	    	Employee enp = new Employee();
+	    	System.out.println(enp.name1());
+	    	System.out.println(enp.name2());
+	    }
+
+
+
+	}

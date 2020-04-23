@@ -1,0 +1,15 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class FraudDiceTest {
+
+	public static void main(String[] args) {
+		FraudDice test = new FraudDice();
+
+		for(int i=0; i<1000; i++ ) {
+			if((test.cast() !=3) && (test.cast() !=4)  )
+			System.out.println(test.cast());
+		}
+
+	}
+
+}

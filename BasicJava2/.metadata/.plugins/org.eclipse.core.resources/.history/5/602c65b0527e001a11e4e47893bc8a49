@@ -1,0 +1,9 @@
+package work09.work0902;
+
+public class Person {
+	protected String name = "super";
+
+}
+
+
+

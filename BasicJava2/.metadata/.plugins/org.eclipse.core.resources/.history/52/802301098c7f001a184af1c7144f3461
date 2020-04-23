@@ -1,0 +1,29 @@
+package work09.work0909;
+
+public class Rectangle extends Shape{
+
+	double width;
+	double heught;
+	
+	public Rectangle(double width, double heught) {
+		this.width = width;
+		this.heught = heught;
+	}
+
+	@Override
+	public double getArea() {
+		return width*heught;
+	}
+	
+	@Override
+	public double getPerimeter() {
+		return (2*width + 2*heught);
+	}
+	
+	@Override
+	public void expand(double ratio) {
+		width *= ratio;
+		heught *= ratio;				
+	}
+
+}

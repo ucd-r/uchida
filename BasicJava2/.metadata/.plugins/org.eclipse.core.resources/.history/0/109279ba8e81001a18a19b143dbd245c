@@ -1,0 +1,10 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class SequentialDiceTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

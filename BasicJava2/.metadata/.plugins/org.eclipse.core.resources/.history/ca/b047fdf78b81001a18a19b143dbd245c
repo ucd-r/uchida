@@ -1,0 +1,5 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class SequentialDice {
+
+}

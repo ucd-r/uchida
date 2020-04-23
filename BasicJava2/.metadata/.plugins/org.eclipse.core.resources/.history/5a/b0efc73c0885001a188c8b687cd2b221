@@ -1,0 +1,11 @@
+package work12.work12_01;
+
+public class work12_1 {
+
+	public static void main(String[] args) {
+		Color g = Color.BLACK;
+		
+		System.out.println(g.japaneseName());
+	}
+
+}

@@ -1,0 +1,5 @@
+package jp.co.ulsystems.rie_uhcida.janken;
+
+public class Hand {
+
+}

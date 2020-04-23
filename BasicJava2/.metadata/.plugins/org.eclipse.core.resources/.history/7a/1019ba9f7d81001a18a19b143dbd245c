@@ -1,0 +1,68 @@
+package work10.work1003;
+
+public class ShapeTest {
+
+	 static final int RATIO = 2;
+
+	  public static void main(String[] args) {
+
+		    testShape(new Rectangle(3,4));		// 長方形
+		    testShape(new Circle(16));		// 円
+		    testShape(new Trapezoid(7 , 8, 9));	// 台形
+		    testShape(new Square(10));		// 正方形
+
+
+			  Rectangle rect = new Rectangle(3,4);
+			  testSpreadable(rect);
+			  Shape shapeRect = new Rectangle(3,4);
+			  testSpreadable((Spreadable)shapeRect);
+
+			  Circle circle = new Circle(16);
+			  //testSpreadable(circle);
+			  Shape shapeCircle = new Circle(16);
+			  //testSpreadable(shapeCircle);
+
+			  Trapezoid trape = new Trapezoid(7 , 8, 9);
+			  testSpreadable(trape);
+			  Shape shapeTrape = new Trapezoid(7 , 8, 9);
+			  //testSpreadable(shapeTrape);
+
+			  Square square = new Square(10);
+			  //testSpreadable(trape);
+			  Square shapeSquare = new Square(10);
+			  //testSpreadable(shapeTrape);
+
+			  /* Shapeクラス, Circleクラス，Squareクラスには，Spreadableインタフェースを実装していないためエラー
+			   *
+			   * Spreadableインタフェースを実装しているクラスのオブジェクトは，
+			   * 自動的にSpreadable型に変換され，testSpreadableメソッドの引数に渡る．
+			   * Spreadableインタフェースを実装していないクラスのオブジェクトは，自動的にSpreadable型に変換されない．
+			   * testSpreadable((Spreadable)shapeRect);
+			   * とキャストすると通る．
+			   */
+	}
+
+	  //work10-2
+	  private static void testShape(Shape shape) {
+		  System.out.printf("work10-2\n【%s】\n", shape);
+		  System.out.printf("Area:%.2f \t Perimeter:%.2f\n", shape.getArea(), shape.getPerimeter());
+		  System.out.printf("↓↓expand(%d倍)↓↓\n",RATIO);
+		  shape.expand(RATIO);
+		  System.out.printf("Area:%.2f \t Perimeter:%.2f\n", shape.getArea(), shape.getPerimeter());
+
+		  if(shape instanceof Spreadable) {
+			  System.out.printf("↓↓spread(%d倍)↓↓\n",RATIO);
+			  ((Spreadable)shape).spread(RATIO);
+			  System.out.printf("Area:%.2f \t Perimeter:%.2f\n", shape.getArea(), shape.getPerimeter());
+		  }
+		  System.out.println();
+	 }
+
+	  //work10-3
+	  private static void testSpreadable(Spreadable spreadable) {
+		  System.out.printf("work10-3\n%s\n",spreadable);
+		  System.out.printf("↓↓spread(%d倍)↓↓\n",RATIO);
+		  spreadable.spread(RATIO);
+		  System.out.printf("%s\n\n", spreadable);
+		  }
+}

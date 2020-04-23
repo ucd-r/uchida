@@ -1,0 +1,15 @@
+package testJava;
+
+public class C extends B{
+	int c = 3;
+	  C(){super();
+		    System.out.println("クラスCのコンストラクタ");
+		  }
+	  @Override
+	  public void test(){
+		  System.out.println("Ctest");
+	  }
+	  public void getC() {
+		  System.out.println(this.c);
+	  }
+}

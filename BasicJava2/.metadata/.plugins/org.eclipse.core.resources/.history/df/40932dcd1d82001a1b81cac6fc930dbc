@@ -1,0 +1,17 @@
+package work2_06;
+import java.util.Scanner;
+public class work2_6 {
+
+	public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+        
+        System.out.println("底辺の値:");
+        double base = stdIn.nextDouble();
+        System.out.println("高さの値:");
+        double height = stdIn.nextDouble();
+
+        System.out.println("面積は" + (base * height)/2);
+
+	}
+
+}

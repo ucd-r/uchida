@@ -1,0 +1,22 @@
+//package work12.work12_01;
+//
+//public enum Color {
+//	BLACK("黒"), RED("赤");
+//
+//	private final String displayName;
+//
+//	Color(String displayName) {
+//		this.displayName = displayName;
+//	}
+//
+//	public Color japaneseName(String value) {
+//		 switch(value) {
+//		 case"黒": return BLACK;
+//		 case"赤": return RED;
+//		 }
+//		  }
+//
+//	public int colorCode(String value) {
+//
+//	}
+//}

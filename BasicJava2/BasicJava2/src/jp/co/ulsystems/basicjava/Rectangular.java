@@ -1,0 +1,27 @@
+package jp.co.ulsystems.basicjava;
+
+public class Rectangular {
+
+	int width;
+	int height;
+	int depth;
+	
+	public Rectangular(int width, int height, int depth){
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
+	}
+	
+	public int getVolume() {
+		int vol = width*height*depth;
+		return vol;
+	}
+	
+	public boolean isCube() {
+		if((width == height) && (depth == height))
+			return true;
+		else return false;
+		
+	}
+	
+}

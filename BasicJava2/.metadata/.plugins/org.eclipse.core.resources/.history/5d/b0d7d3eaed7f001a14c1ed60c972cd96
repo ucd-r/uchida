@@ -1,0 +1,20 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+
+
+public class PlayerTest {
+
+	public static void main(String[] args) {
+		Hand hand = new Hand();
+		Player rie =  new Player("rie", hand);
+		
+		System.out.println(rie.getName());
+		System.out.println(rie.setHand());
+		System.out.println(rie.getScore());
+		rie.addPoint();
+		System.out.println(rie.getScore());
+		
+
+	}
+
+}

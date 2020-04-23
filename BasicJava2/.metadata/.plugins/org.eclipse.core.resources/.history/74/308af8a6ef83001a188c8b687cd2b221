@@ -1,0 +1,15 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class SequentialDice implements Dice{
+	public int DiceNum = 0;
+
+	@Override
+    public int cast() {
+    	if(DiceNum == 6) {
+    	    DiceNum = 0;
+    	}
+    	DiceNum++;
+    	return DiceNum;
+    }
+
+}

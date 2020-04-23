@@ -1,0 +1,27 @@
+package jp.co.ulsystems.rie.uchida.dicegame;
+
+public class DiceGame {
+	static final int GameNum = 10;
+	
+	public static void main(String[] args) {
+ 
+		Dice dice1 = new Dice();
+		Dice dice2 = new Dice();
+		
+		Player player1 = new Player("漆原", dice1);
+		Player player2 =  new Player("平沢", dice2);
+		
+		Judge judge = new Judge();
+		
+		judge.addPlayers(player1, player2);
+		
+		System.out.println("==ゲーム開始==");
+		for(int i = 0; i < GameNum; i++)
+		judge.startGame();
+		
+		judge.endGame();
+		
+
+	}
+
+}

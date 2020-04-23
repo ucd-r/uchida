@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runner version="1.0.0">
+    <category expanded="true" name="カテゴリーなし">
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="CarPrint"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DiceGame"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DiceGame (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DiceGame (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="DiceTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Employee"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="FraudDiceTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="FraudDiceTest (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="FraudDiceTest (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="GCTest1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="GCTest2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="HandTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="InstanceofSample"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="JankenGame"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="JankenGame (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="NamedRectangularTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PersonTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PlayerTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PlayerTest (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PlayerTest (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PlayerTest (3)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PlayerTest (4)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="PlayerTest (5)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RandomDiceTest (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Rectangle"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Rectangle (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangleTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangleTest (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangleTest (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangleTest (3)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (3)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (4)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (5)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (6)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (7)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (8)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="RectangularTest (9)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="SequentialDiceTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (3)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (4)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (5)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (6)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (7)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ShapeTest (8)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Think08"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Think08 (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work1_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work2_11"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work2_12"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work2_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work2_3"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work2_4"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work2_5"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work3_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work3_11"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work3_3"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work3_4"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work3_6"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work3_7"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work3_9"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_07"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_10"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_15"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_3"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_4"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_5"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_6"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_8"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work4_9"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Work5_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="work2_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="work2_6"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="work2_7"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="work2_8"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="work3_10"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="work5_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="新規構成"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="新規構成 (1)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="新規構成 (2)"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="新規構成 (3)"/>
+    </category>
+</runner>

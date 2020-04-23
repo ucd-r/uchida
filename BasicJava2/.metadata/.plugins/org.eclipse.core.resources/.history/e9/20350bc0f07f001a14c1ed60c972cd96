@@ -1,0 +1,75 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+public class Judge {
+
+	private Player player1;
+	private Player player2;
+
+	public void addPlayers(Player player1, Player player2) {
+		this.player1  = player1;
+		this.player2  = player2;
+	}
+
+	public void startGame(int GAME_COUNT) {
+
+		for(int i = 1; i <= GAME_COUNT; i++) {
+			System.out.println("【" + i + "回戦目】" );
+			System.out.println(player1.setHand() + "vs." + player2.setHand());
+			judgeJanken();
+		}
+	}
+
+	//勝ち数の比較とゲームの勝敗出力
+	public void endGame() {
+		System.out.print(player1.getScore() + "対" + player2.getScore() + "で");
+
+		if(player1.getScore() > player2.getScore()) {
+			System.out.println(player1.getName() + "さんの勝ちです！");
+		}else if (player1.getScore() < player2.getScore()) {
+			System.out.println(player2.getName() + "さんの勝ちです！");
+		}else {
+			System.out.println("引き分けです！");
+		}
+	}
+
+	//ジャンケン勝敗の判定と結果出力
+	public void judgeJanken() {
+
+		if(player1.getLastHand().equals(player2.getLastHand())) {
+			player1.addPoint();
+			player2.addPoint();
+			System.out.println("引き分けです！\n");
+		}
+		switch (player1.getLastHand()) {
+		case Hand.GU:
+			if(player2.getLastHand().equals(Hand.CHOKI)) {
+				player1.addPoint();
+				System.out.println(player1.getName() + "さんが勝ちました！\n");
+			}else if (player2.getLastHand().equals(Hand.PA)) {
+				player2.addPoint();
+				System.out.println(player2.getName() + "さんが勝ちました！\n");
+			}
+			break;
+		case Hand.CHOKI:
+			if(player2.getLastHand().equals(Hand.PA)) {
+				player1.addPoint();
+				System.out.println(player1.getName() + "さんが勝ちました！\n");
+			}else if (player2.getLastHand().equals(Hand.GU)) {
+				player2.addPoint();
+				System.out.println(player2.getName() + "さんが勝ちました！\n");
+			}
+			break;
+		case Hand.PA:
+			if(player2.getLastHand().equals(Hand.GU)) {
+				player1.addPoint();
+				System.out.println(player1.getName() + "さんが勝ちました！\n");
+			}else if (player2.getLastHand().equals(Hand.CHOKI)) {
+				player2.addPoint();
+				System.out.println(player2.getName() + "さんが勝ちました！\n");
+			}
+			break;
+
+		}
+	}
+
+}

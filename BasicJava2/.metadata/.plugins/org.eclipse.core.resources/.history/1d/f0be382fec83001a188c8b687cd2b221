@@ -1,0 +1,17 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+import java.util.ArrayList;
+
+public class GameRecorder {
+
+	public static void printScore(Player player) {
+		System.out.printf("%sさん：%d(%d)\t",player.getPlayerName(), player.getLastDiceNum(),  player.getScore());
+	}
+
+	public static void printWinners(ArrayList<String> winner_list) {
+		for(String winner :winner_list) {
+			System.out.printf("%sさん\t", winner);
+		}
+		System.out.println("が勝ちました！");
+
+	}
+}

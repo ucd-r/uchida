@@ -1,0 +1,13 @@
+package testJava;
+
+public class ABCTest {
+
+
+	public static void main(String[] args) {
+		B sample = new B();
+		sample.test();
+		//B.getB();
+		B.b;
+	}
+
+}

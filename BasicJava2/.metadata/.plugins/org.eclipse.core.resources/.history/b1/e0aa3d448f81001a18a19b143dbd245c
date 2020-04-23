@@ -1,0 +1,15 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class SequentialDice implements Dice{
+	private int setDiceNum = 1;
+
+    public int cast() {
+    	if(setDiceNum != 6) {
+    		System.out.println("ss");
+    		return setDiceNum++;
+    	}else {
+    		return 1;
+    	}
+    }
+
+}

@@ -1,0 +1,10 @@
+package testJava;
+
+public class ABCTest {
+
+	public static void main(String[] args) {
+		C sample = new C();
+
+	}
+
+}

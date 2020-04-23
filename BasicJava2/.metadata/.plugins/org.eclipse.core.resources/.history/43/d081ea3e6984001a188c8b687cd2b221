@@ -1,0 +1,35 @@
+package work11.work1101;
+
+import java.util.Scanner;
+
+public class SimpleCalc {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		int value = 0;
+		int sum = 0;
+		while(true) {
+			System.out.printf("%d:", value);
+			String line = scanner.nextLine();
+			try {
+				value = Integer.parseInt(line);
+				sum += value;
+
+			}catch(NumberFormatException e){
+if(e.equals("java.lang.NumberFormatException: For input string: \"w\""))
+					System.out.println("w");
+
+				break;
+				// 変換できない場合は、この部分が実行される
+			}
+
+		}
+
+
+
+
+
+	}
+
+}

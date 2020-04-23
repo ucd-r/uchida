@@ -1,0 +1,24 @@
+package work5.work5_02;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Work5_2 {
+
+	public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+        System.out.println("人数:");
+        int pNum = stdIn.nextInt();
+        int[] array = new int[pNum];
+
+        for(int i = 0; i < pNum; i++) {
+            System.out.println("得点:");
+            array[i] = stdIn.nextInt();
+            }
+
+        System.out.println("最小値は" + Arrays.stream(array).min());
+        System.out.println("最大値は" + Arrays.stream(array).max());
+        System.out.println("合計値は" + Arrays.stream(array).sum());
+        System.out.println("平均値は" + Arrays.stream(array).average());
+	}
+
+}

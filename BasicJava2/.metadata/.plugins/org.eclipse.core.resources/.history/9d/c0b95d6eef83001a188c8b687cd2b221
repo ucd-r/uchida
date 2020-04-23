@@ -1,0 +1,32 @@
+package jp.co.ulsystems.rie_uchida.dicegame;
+
+public class Player {
+
+	private String playerName;
+	private Dice dice;
+	private int score;
+	private int lastDiceNum;
+
+	public Player(String playerName, Dice dice) {
+		this.dice = dice;
+		this.playerName = playerName;
+	}
+
+	public String getName() {
+		return playerName;
+	}
+
+	public void castDice() {
+		lastDiceNum = dice.cast();
+		score += lastDiceNum;
+	}
+
+	public int getScore() {
+		return score;
+	}
+
+	public int getLastDiceNum() {
+		return lastDiceNum;
+	}
+
+}

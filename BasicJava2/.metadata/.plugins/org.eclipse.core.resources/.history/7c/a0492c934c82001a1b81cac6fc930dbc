@@ -1,0 +1,21 @@
+package work4.work4_06;
+import java.util.Scanner;
+
+public class Work4_6 {
+
+	public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+        System.out.println("何個表示しますか：");
+        int times = stdIn.nextInt();
+
+        for(int i=0; i < times; i++) {
+        	if(i%2 == 0) {
+        		System.out.print("*");
+        	}else {
+        		System.out.print("+");
+        	}
+            
+        }
+	}
+
+}

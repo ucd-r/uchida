@@ -1,0 +1,21 @@
+package jp.co.ulsystems.rie_uchida.janken;
+
+import java.util.Random;
+
+public class Hand2type extends HandRundom {
+
+	private Random rand;
+	static final String GU = "グー";
+	static final String PA = "パー";
+
+//	@Override
+//	public String chooseHand() {
+//		rand = new Random();
+//    	int num = rand.nextInt(2);
+//    	if(num == 0) {
+//    		return GU;
+//    	}else if(num == 1) {
+//    		return PA;
+//    	}
+//	}
+}
